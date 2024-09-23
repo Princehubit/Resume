@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins: 200,300, 400, 500, 600, 700, 800, 900&display=swap' );
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg,#231fbf,#69175f);
+    padding: 50px;
+}
+h2{
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0.7em;
+    letter-spacing: 0.1em;
+}
+h2 span{
+    font-size: 0.4em;
+    font-weight: 300;
+}
+.group{
+    position: relative;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 20px;
+}
+.group .imgBx{
+    position: relative;
+    width:100%;
+}
+.group .imgBx  img{
+    width: 280px;
+    height:fit-content;
+}
+.group p{
+    color: #fff;
+    font-size:  1.05em; ;
+}
+.bottom{
+    position: relative;
+    display: grid;
+    margin: 50px 50px 0;
+    gap: 40px;
+    grid-template-columns: 2fr 3fr;
+}
+.bottom .left_side{
+    margin-top: 50px;
+}
+h4{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #fff;
+    background: #231fbf;
+    font-weight: 600;
+    padding: 0 15px;
+    margin-top: 40px;
+    display: inline-flex;
+}
+.contactInfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0 ;
+}
+.contactInfo li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.contactInfo li .icon{
+    color: #231fbf;
+}
+.contactInfo li .text{
+    color:#555 ;
+}
+.skills
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.skills .skillsBox{
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+.skills .skillsBox p{
+    color:#333;
+}
+.skills .skillsBox .value{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #eee;
+}
+.skills .skillsBox .value::before{
+    content: '';
+    position: absolute;
+    width: var(--i);
+    height: 100%;
+    background: #231fbf;
+}
+.adjustMargin{
+    margin: top -10px; ;
+}
+.edu_group{
+    position: relative;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.edu_group .edu_groupBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.edu_groupBx p:nth-child(1){
+    font-weight: 500;
+}
+.edu_groupBx b{
+    font-weight: 600;
+    color: #231fbf;
+}
+.hobbies ul{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.hobbies ul li{
+    list-style: none;
+    color: #333;
+    width: calc(100% / 6);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.hobbies ul li i{
+    font-size: 2em;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>PRINCE SANDEEP KHOSALA<br><span>Frontend Developer</span></h2>
+            <div class="group">
+                <div class="leftside">
+                   <div class="imgBx">
+                    <img src="23CSEAIML071.jpeg">
+                   </div>
+                </div>
+                <div class="rightside">
+                       <p>"As a recent CSE (Computer Science and Engineering) graduate with specialization in AIML (Artificial Intelligence and Machine Learning) reflecting a keen interest in technology, IT, and web development. I am eager to apply my theoretical knowledge and practical skills to contribute positively to a dynamic team. Through internships and academic projects, I've honed my abilities in programming languages such as [list relevant languages], web development frameworks, and IT fundamentals demonstrating adaptability, strong work ethic, and a commitment to learning. Seeking opportunities to grow professionally while making meaningful contributions in a collaborative environment."</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left_side">
+                <h4>Contact</h4>
+                <ul class="contactInfo">
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class="text">+91 9692259656</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="text">princesandeepk@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                        <span class="text">github.com/Princehubit</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text">linkedin.com/in/prince-khosla-a81520279/</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="text">Malkangiri, Odisha, India</span>
+                    </li>
+                </ul>
+                <h4>Skills</h4>
+                <div class="skills">
+                    <div class="skillsBox" style="--i:85%;">
+                        <p>Proficient in HTML, CSS, and JavaScript</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="skillsBox" style="--i:70%;">
+                        <p>Experience with Frontend Frameworks</p>
+                        <div class="value"></div>
+                    </div>
+                    <!-- <div class="skillsBox" style="--i:65%;">
+                        <p>Backend Development Skills</p>
+                        <div class="value"></div>
+                    </div> -->
+                    <div class="skillsBox" style="--i:95%;">
+                        <p>Version Control</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="skillsBox" style="--i:81%;">
+                        <p>Cross-Browser Compatibility</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="skillsBox" style="--i:75%;">
+                        <p>Knowledge of Web Security Best Practices</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="skillsBox" style="--i:88%;">
+                        <p>Testing and Debugging</p>
+                        <div class="value"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <h4 class="adjustMargin">Education</h4>
+                <div class="edu_group">
+                    <div class="edu_groupBx">
+                        <p>2007-2019</p>
+                        <div class="value">
+                            <b>Secondary School Certificate</b>
+                            <p>De Paul School, Brahmapur</p>
+                        </div>
+                    </div>
+                    <div class="edu_groupBx">
+                        <p>2019-2021</p>
+                        <div class="value">
+                            <b>Higher Secondary School Certificate</b>
+                            <p>DAV Public School, Brahmapur</p>
+                        </div>
+                    </div>
+                    <div class="edu_groupBx">
+                        <p>2023-2027</p>
+                        <div class="value">
+                            <b>Bachelor in Technology</b>
+                            <p>Electronics and Communications Technology<br>GIET University, Gunupur</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="adjustMargin">Work Experience</h4>
+                <div class="edu_group">
+                    <div class="edu_groupBx">
+                        <p>Senior Engineering Manager</p>
+                        <div class="value">
+                            <b>Microsoft . Full-time</b>
+                            <p>May 2029 - Present</p>
+                        </div>
+                    </div>
+                    <div class="edu_groupBx">
+                        <p>Technical Lead</p>
+                        <div class="value">
+                            <b>Rippling . Full-time</b>
+                            <p>Mar 2028 - May 2029</p>
+                        </div>
+                    </div>
+                    <div class="edu_groupBx">
+                        <p>SDE 2</p>
+                        <div class="value">
+                            <b>Amazon . Full-time</b>
+                            <p>Aug 2026 - Feb 2028</p>
+                        </div>
+                    </div>
+                    <div class="edu_groupBx">
+                        <p>Intern</p>
+                        <div class="value">
+                            <b>Samsung India . Part-time</b>
+                            <p>Dec 2024 - Feb 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobbies">
+                    <h4 class="adjustMargin">Hobbies</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-music"></i><p>Music</p></li>
+                        <li><i class="fa-solid fa-diamond"></i><p>Cricket</p></li>
+                        <li><i class="fa-solid fa-camera-retro"></i><p>Photography</p></li>
+                        <li><i class="fa-solid fa-plane-departure"></i><p>Travelling</p></li>
+                        <li><i class="fa-solid fa-code"></i><p>Technology and Coding</p></li>
+                        <li><i class="fa-solid fa-laptop-file"></i><p>Language Learning</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
